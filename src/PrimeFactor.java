@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * 
  */
@@ -18,8 +20,9 @@ public class PrimeFactor {
 	public static void main(String[] args) {
 	}
 	
-	public static int[] primefactorization(int num){
-		int[] returnval = {};
+	public static ArrayList<Integer> primefactorization(int num){
+		ArrayList<Integer> returnval = new ArrayList();
+		//if()
 		return returnval;
 	}
 

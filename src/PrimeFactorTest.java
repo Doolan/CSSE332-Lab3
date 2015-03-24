@@ -1,4 +1,7 @@
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
 import junit.framework.Assert;
 
 import org.junit.Test;
@@ -17,8 +20,8 @@ public class PrimeFactorTest {
 
 	@Test
 	public final void test1ReturnsEmpty() {
-		int[] answer ={};
-		assertArrayEquals(answer,PrimeFactor.primefactorization(1));
+		ArrayList<Integer> answer = new ArrayList<Integer>();
+		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(1).toArray());
 	}
 
 	@Test
