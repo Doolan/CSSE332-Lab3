@@ -5,7 +5,7 @@
 /**
  * TODO Put here a description of what this class does.
  *
- * @author Steven.
+ * @author Doolan.
  *         Created Mar 24, 2015.
  */
 public class PrimeFactor {
@@ -16,6 +16,11 @@ public class PrimeFactor {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+	}
+	
+	public static int[] primefactorization(int num){
+		int[] returnval = {};
+		return returnval;
 	}
 
 }
