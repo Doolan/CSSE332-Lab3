@@ -16,8 +16,14 @@ import org.junit.Test;
 public class PrimeFactorTest {
 
 	@Test
-	public final void test() {
-		assertEquals(PrimeFactor.primefactorization(1).length,0);
+	public final void test1ReturnsEmpty() {
+		int[] answer ={};
+		assertArrayEquals(answer,PrimeFactor.primefactorization(1));
 	}
 
+	@Test
+	public final void test2Returns2() {
+		int[] answer ={2};
+		assertEquals(PrimeFactor.primefactorization(2), answer);
+	}
 }
