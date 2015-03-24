@@ -1,4 +1,5 @@
 import static org.junit.Assert.*;
+import junit.framework.Assert;
 
 import org.junit.Test;
 
@@ -16,7 +17,7 @@ public class PrimeFactorTest {
 
 	@Test
 	public final void test() {
-		fail("Not yet implemented");
+		assertEquals(PrimeFactor.primefactorization(1).length,0);
 	}
 
 }
