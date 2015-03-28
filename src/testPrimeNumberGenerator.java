@@ -56,7 +56,9 @@ public class testPrimeNumberGenerator {
 	@Test
 	public void testPrimeNumberChecker(){
 		System.out.println("Parameterized Number is : " + inputNumber);
+		System.out.println(PrimeNumberGenerator.primegenerate(inputNumber));
 		assertArrayEquals(expectedResult.toArray(),PrimeNumberGenerator.primegenerate(inputNumber).toArray());
+		
 	}
 	
 }

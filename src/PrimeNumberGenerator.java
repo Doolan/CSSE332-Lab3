@@ -14,8 +14,22 @@ public class PrimeNumberGenerator {
 
 	public static ArrayList<Integer> primegenerate(int input){
 		 ArrayList<Integer> returnArray = new ArrayList<Integer>();
-		return returnArray;
-		
+		 if(input<2)
+			 return returnArray;
+		 for(int i =2; i<input; i++){
+			 boolean iIsPrime = true;
+			 
+			 for(int j = 2; j<i; j++){
+				 if(i%j==0){
+					 iIsPrime = false;
+					 break;
+				 }
+			 }
+			 if(iIsPrime){
+				 returnArray.add(i);
+			 }
+		 }		 
+		 return returnArray;		
 	}
 	
 }
