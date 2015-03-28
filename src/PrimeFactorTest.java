@@ -47,10 +47,11 @@ public class PrimeFactorTest {
 	}
 	
 	@Test
-	public final void test2Returns23() {
+	public final void test6Returns23() {
+		System.out.println(PrimeFactor.primefactorization(6));
 		ArrayList<Integer> answer = new ArrayList<Integer>();
 		answer.add(2);
-		answer.add(2);
+		answer.add(3);
 		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(6).toArray());
 	}
 }
