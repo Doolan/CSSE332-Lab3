@@ -25,6 +25,8 @@ public class PrimeFactor {
 		if (num == 2){
 			
 			returnval.add(2);
+		}else if(num ==3){
+			returnval.add(3);
 		}
 		return returnval;
 	}
