@@ -42,10 +42,14 @@ public class testPrimeNumberGenerator {
    @Parameterized.Parameters
    public static Collection primeNumbers() {
 	   ArrayList<Integer> one = new ArrayList<Integer>();
+	   ArrayList<Integer> two = new ArrayList<Integer>();
+	   two.add(2);
+	   two.add(3);
       return Arrays.asList(new Object[][] {
     		  {0, one},
     		  {1, one},
-    		  {2, one}
+    		  {2, one},
+    		  {4, two}
       });
    }	
 	
