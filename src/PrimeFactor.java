@@ -23,14 +23,15 @@ public class PrimeFactor {
 	public static ArrayList<Integer> primefactorization(int num){
 		ArrayList<Integer> returnval = new ArrayList<Integer>();
 		int numtemp = num;
-		while(numtemp % 2 == 0){			
-			returnval.add(2);
-			numtemp = numtemp/2;
+		int[] primes = {2,3,5,7};
+		for(int i = 0; i< 4; i++){
+			while(numtemp % primes[i] == 0){			
+				returnval.add(primes[i]);
+				numtemp = numtemp/primes[i];
+			}
 		}
-		numtemp = num;
-		while(numtemp % 3 == 0){
-			returnval.add(3);
-			numtemp = numtemp/3;
+		if(numtemp>1){
+			returnval.add(numtemp);
 		}
 		return returnval;
 	}
