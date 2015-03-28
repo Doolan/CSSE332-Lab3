@@ -30,4 +30,12 @@ public class PrimeFactorTest {
 		answer.add(2);
 		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(2).toArray());
 	}
+	
+	@Test
+	public final void test3Returns3() {
+		ArrayList<Integer> answer = new ArrayList<Integer>();
+		//answer.add(2);
+		answer.add(3);
+		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(3).toArray());
+	}
 }
