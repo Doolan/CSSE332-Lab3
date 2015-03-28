@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class testPrimeNumberGenerator {
 	private Integer inputNumber;
-	private Boolean expectedResult;
+	private ArrayList<Integer> expectedResult;
 	private PrimeNumberGenerator primeNumberGenerator;
 	
    @Before
@@ -29,9 +29,26 @@ public class testPrimeNumberGenerator {
 	   primeNumberGenerator = new PrimeNumberGenerator();
    }
 	
-	public PrimeNumberGeneratorTest(Integer inputNumber, Boolean expectedResult) {
+	public PrimeNumberGeneratorTest(Integer inputNumber, ArrayList<Integer> expectedResult) {
 	      this.inputNumber = inputNumber;
 	      this.expectedResult = expectedResult;
 	   }
+	
+   @Parameterized.Parameters
+   public static Collection primeNumbers() {
+      return Arrays.asList(new Object[][] {
+         { 2, true },
+         { 6, false },
+         { 19, true },
+         { 22, false },
+         { 23, true }
+      });
+   }	
+	
+	@Test
+	public void testPrimeNumberChecker(){
+		System.out.println("Parameterized Number is : " + inputNumber);
+	   
+	}
 	
 }
