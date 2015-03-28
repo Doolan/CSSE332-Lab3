@@ -70,4 +70,14 @@ public class PrimeFactorTest {
 		answer.add(3);
 		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(9).toArray());
 	}
+	
+	@Test
+	public final void test325115Returns5771327() {
+		ArrayList<Integer> answer = new ArrayList<Integer>();
+		answer.add(5);
+		answer.add(7);
+		answer.add(7);
+		answer.add(1327);
+		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(325115).toArray());
+	}
 }
