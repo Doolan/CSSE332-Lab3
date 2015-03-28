@@ -43,6 +43,6 @@ public class PrimeFactorTest {
 		ArrayList<Integer> answer = new ArrayList<Integer>();
 		answer.add(2);
 		answer.add(2);
-		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(3).toArray());
+		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(4).toArray());
 	}
 }
