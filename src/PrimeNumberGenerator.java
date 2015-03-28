@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * 
  */
@@ -10,4 +12,10 @@
  */
 public class PrimeNumberGenerator {
 
+	public static ArrayList<Integer> primegenerate(int input){
+		 ArrayList<Integer> returnArray = new ArrayList<Integer>();
+		return returnArray;
+		
+	}
+	
 }
