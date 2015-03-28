@@ -48,7 +48,6 @@ public class PrimeFactorTest {
 	
 	@Test
 	public final void test6Returns23() {
-		System.out.println(PrimeFactor.primefactorization(6));
 		ArrayList<Integer> answer = new ArrayList<Integer>();
 		answer.add(2);
 		answer.add(3);
@@ -57,10 +56,10 @@ public class PrimeFactorTest {
 	
 	@Test
 	public final void test8Returns222() {
-		System.out.println(PrimeFactor.primefactorization(6));
 		ArrayList<Integer> answer = new ArrayList<Integer>();
 		answer.add(2);
-		answer.add(3);
-		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(6).toArray());
+		answer.add(2);
+		answer.add(2);
+		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(8).toArray());
 	}
 }
