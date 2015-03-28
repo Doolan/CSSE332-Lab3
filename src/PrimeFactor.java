@@ -21,8 +21,11 @@ public class PrimeFactor {
 	}
 	
 	public static ArrayList<Integer> primefactorization(int num){
-		ArrayList<Integer> returnval = new ArrayList();
-		//if()
+		ArrayList<Integer> returnval = new ArrayList<Integer>();
+		if (num == 2){
+			
+			returnval.add(2);
+		}
 		return returnval;
 	}
 

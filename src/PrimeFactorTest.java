@@ -26,7 +26,8 @@ public class PrimeFactorTest {
 
 	@Test
 	public final void test2Returns2() {
-		int[] answer ={2};
-		assertEquals(PrimeFactor.primefactorization(2), answer);
+		ArrayList<Integer> answer = new ArrayList<Integer>();
+		answer.add(2);
+		assertArrayEquals(answer.toArray(),PrimeFactor.primefactorization(2).toArray());
 	}
 }
